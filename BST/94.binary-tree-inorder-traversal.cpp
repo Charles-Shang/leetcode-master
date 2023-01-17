@@ -66,7 +66,7 @@
 class Solution {
    public:
     void helper(TreeNode* node, vector<int>& acc) {
-        if (node != nullptr) {
+        if (node) {
             helper(node->left, acc);
             acc.push_back(node->val);
             helper(node->right, acc);
